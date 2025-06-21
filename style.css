@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #481796;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  background: rgb(172, 36, 129);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form input, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.post {
+  background: #eaeaea;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.post h3 {
+  margin: 0;
+}
+
+.post p {
+  margin: 5px 0;
+}

@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Excited for this new app",
+      "content": "Could this be the next big thing"
+    },
+    {
+      "id": 2,
+      "title": "Learning Coding",
+      "content": "Promineo Tech is the best!"
+    },
+    {
+      "title": "Week 12 should be fun!!!!",
+      "content": "Almost to the finsih line!",
+      "id": 3
+    }
+  ]
+}
