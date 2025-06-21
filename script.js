@@ -5,7 +5,7 @@ async function getPosts() {
   const posts = await res.json();
   displayPosts(posts);
 }
-
+// Displays the users post
 function displayPosts(posts) {
   const container = document.getElementById('posts-container');
   container.innerHTML = '';
@@ -21,7 +21,7 @@ function displayPosts(posts) {
     container.appendChild(postDiv);
   });
 }
-
+// Create a post
 async function createPost(title, content) {
   await fetch(apiUrl, {
     method: 'POST',
@@ -30,14 +30,14 @@ async function createPost(title, content) {
   });
   getPosts();
 }
-
+// Delete a post 
 async function deletePost(id) {
   await fetch(`${apiUrl}/${id}`, {
     method: 'DELETE'
   });
   getPosts();
 }
-
+// Edit a post
 function editPost(id, oldTitle, oldContent) {
   const title = prompt("Edit title:", oldTitle);
   const content = prompt("Edit content:", oldContent);
@@ -50,7 +50,7 @@ function editPost(id, oldTitle, oldContent) {
     }).then(() => getPosts());
   }
 }
-
+// Submit your post 
 document.getElementById('post-form').addEventListener('submit', e => {
   e.preventDefault();
   const title = e.target.title.value;
